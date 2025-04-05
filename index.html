@@ -1,0 +1,45 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Payment Application</h1>
+    <div class="balance">
+    <h2>Your Balance: $<span id="balance">0.00</span></h2>
+    </div>
+    
+    <div class="send-money">
+      <h3>Send Money</h3>
+      <form id="sendForm">
+        <input type="text" id="recipient" placeholder="Recipient Name" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Send</button>     
+      </form>
+    </div>
+    
+    <div class="transaction-history">
+  	<h3>Transaction History</h3>
+  	<ul id="history">
+    <!-- Transactions will be populated here -->
+  	</ul>
+	</div>
+    
+    
+    <!-- Link to a new page -->
+    <a href="transactionHistory.html">
+        <button id="transaction-button">Transaction History</button>
+    </a>     
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+    
