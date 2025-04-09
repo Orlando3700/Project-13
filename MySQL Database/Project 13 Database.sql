@@ -1,0 +1,19 @@
+CREATE DATABASE payment_app;
+USE payment_app;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    balance DECIMAL(10,2) NOT NULL DEFAULT 10000.00
+);
+
+INSERT INTO users (balance) VALUES (10000.00);
+
+CREATE TABLE transactions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    date DATETIME NOT NULL,
+    recipient VARCHAR(255) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL
+);
+
+
+
